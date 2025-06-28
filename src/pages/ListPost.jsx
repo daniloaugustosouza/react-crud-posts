@@ -8,14 +8,13 @@ export default function ListPost() {
         const savedPosts = localStorage.getItem('posts')
         if (savedPosts) {
             setPosts(JSON.parse(savedPosts))
-        } else {
-            fetch('https://jsonplaceholder.typicode.com/posts?_limit=5')
-                .then(res => res.json())
-                .then(data => {
-                    setPosts(data)
-                    localStorage.setItem('posts', JSON.stringify(data))
-                })
+            return
         }
+        fetch('https://jsonplaceholder.typicode.com/posts?_limit=5').then(res => res.json()).then(data => {
+            setPosts(data)
+            localStorage.setItem('posts', JSON.stringify(data))
+        })
+        
     }, []);
 
     const handleDelete = (id) => {
@@ -62,7 +61,6 @@ export default function ListPost() {
                                 </td>
                             </tr>
                         ))}
-
                     </tbody>
                 </table>
             </div>
