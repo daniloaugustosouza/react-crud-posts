@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PostForm from "../components/PostForm";
-import axios from 'axios';
 
 export default function AddPost(){
     const [title,setTitle] = useState('')
@@ -11,10 +10,16 @@ export default function AddPost(){
     const handleAdd = (e)=>{
         e.preventDefault()
 
-        axios.post('https://jsonplaceholder.typicode.com/posts', title,body).then(res => {
-            alert('Salvo')
-            navigate('/')
-        })
+        const newPost = {
+            id:Date.now(), title, body
+        }
+        const savedPosts = localStorage.getItem('posts')
+        const posts = savedPosts ?JSON.parse(savedPosts): []
+
+        const updatedPosts = [newPost,...posts]
+        localStorage.setItem('posts', JSON.stringify(updatedPosts))
+        alert('Salvo')
+        navigate('/')
     }
 
     return (
@@ -31,5 +36,4 @@ export default function AddPost(){
             />
         </div>
     )
-
 }
