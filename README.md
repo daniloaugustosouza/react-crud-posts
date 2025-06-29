@@ -57,16 +57,18 @@ npm run dev
 
 # Prints
 
-<img src="https://github.com/user-attachments/assets/6503a314-4825-4ba6-83ea-b0f096e6f9fc" width="800" />
+<img src="https://github.com/user-attachments/assets/e485d9c0-e832-431c-a2f9-9f3e9c67f123" width="800" />
+
 
 <div style="display: flex; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/148fb7b5-a898-4b7c-8f4a-0c80c089264b" width="450" />
-  <img src="https://github.com/user-attachments/assets/bd95bf13-7ab2-4ef7-8154-78426f8fbeeb" width="459" />
+  <img src="https://github.com/user-attachments/assets/22d9870a-15e7-4786-9f1b-5d724a765470" width="450" />
+  <img src="https://github.com/user-attachments/assets/f630c8ba-02d9-4a6d-9ebb-b1306279eba2" width="450"/>
 </div>
 
+
 <div style="display: flex; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/dad72e3a-733c-43a9-8369-f764f7f4985f" width="400" />
-  <img src="https://github.com/user-attachments/assets/e625bb83-620b-43ac-82ea-618dad19bede" width="500" />
+  <img src="https://github.com/user-attachments/assets/44342bfe-f125-4c10-8b8a-436e93f5497e" width="400" />
+  <img src="https://github.com/user-attachments/assets/634c1e7f-85b8-4dff-a2b8-39c4da33c7ed" width="500" />
 </div>
 
 # Algumas Considerações
