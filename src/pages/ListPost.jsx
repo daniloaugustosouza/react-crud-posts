@@ -32,30 +32,30 @@ export default function ListPost() {
                 </Link>
             </div>
 
-            <div className="overflow-x-auto shadow rounded border">
-                <table className="table-fixed border-separate border-spacing-2 bg-white w-full">
+            <div className="overflow-x-auto shadow rounded border dark:border-gray-700">
+                <table className="table-fixed border-separate border-spacing-2 bg-white dark:bg-gray-800 w-full">
                     <thead>
-                        <tr className="bg-gray-100 text-left text-sm uppercase text-gray-600">
-                            <th className="p-4 border rounded">Titulo</th>
-                            <th className="p-4 border rounded">Contéudo</th>
-                            <th className="p-4 border rounded">Funções</th>
+                        <tr className="bg-gray-100 text-left text-sm uppercase text-gray-600 dark:bg-gray-700 dark:text-gray-300">
+                            <th className="p-4 border rounded dark:border-gray-600">Titulo</th>
+                            <th className="p-4 border rounded dark:border-gray-600">Contéudo</th>
+                            <th className="p-4 border rounded dark:border-gray-600">Funções</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         {posts.map((post) => (
                             <tr key={post.id}>
-                                <td className="p-4 border rounded bg-white shadow-sm">{post.title}</td>
-                                <td className="p-4 border rounded bg-white shadow-sm">{post.body}</td>
-                                <td className="p-4 border rounded bg-white shadow-sm space-x-2">
-                                    <Link to={`/posts/${post.id}`} className="text-blue-600 hover:underline">
+                                <td className="p-4 border rounded bg-white shadow-sm dark:bg-gray-900 dark:border-gray-600">{post.title}</td>
+                                <td className="p-4 border rounded bg-white shadow-sm dark:bg-gray-900 dark:border-gray-600">{post.body}</td>
+                                <td className="p-4 border rounded bg-white shadow-sm space-x-2 dark:bg-gray-900 dark:border-gray-600">
+                                    <Link to={`/posts/${post.id}`} className="text-blue-600 hover:underline dark:text-blue-400">
                                     Ver
                                     </Link>
 
-                                    <Link to={`/posts/${post.id}/edit`} className="text-yellow-600 hover:underline">
+                                    <Link to={`/posts/${post.id}/edit`} className="text-yellow-600 hover:underline dark:text-yellow-400">
                                     Editar
                                     </Link>
-                                    <button onClick={() => handleDelete(post.id)} className="text-red-600 hover:underline">
+                                    <button onClick={() => handleDelete(post.id)} className="text-red-600 hover:underline dark:text-red-400">
                                     Deletar
                                     </button>
                                 </td>

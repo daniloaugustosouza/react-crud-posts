@@ -23,8 +23,8 @@ export default function AddPost(){
     }
 
     return (
-        <div className="max-w-xl mx-auto bg-white p-6 rounded shadow">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">Novo post</h2>
+        <div className="max-w-xl mx-auto bg-white p-6 rounded shadow dark:bg-gray-800 dark:text-gray-100">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-6 dark:text-gray-100">Novo post</h2>
 
             <PostForm
                 title={title}

@@ -37,7 +37,7 @@ export default function EditPost() {
 	}
 
 	return (
-		<div className="max-w-xl mx-auto bg-white p-6 rounded shadow">
+		<div className="max-w-xl mx-auto bg-white p-6 rounded shadow dark:bg-gray-800 dark:text-gray-100">
 			<h2 className="text-2xl font-bold mb-4">Editar Post</h2>
 			<PostForm
 				title={title}
