@@ -2,7 +2,7 @@
 
 Este projeto é uma aplicação básica de um CRUD (Create, Read, Update, Delete) feita com **React + Vite + TailwindCSS**, que simula o gerenciamento de posts.
 
-Foi desenvolvido como parte de um **desafio técnico para uma vaga de estágio** em desenvolvimento frontend.
+Foi desenvolvido como parte de um **desafio técnico para uma vaga de estágio** em desenvolvimento frontend, no prazo de 3 dias.
 
 ---
 
